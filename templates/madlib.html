@@ -1,20 +1,17 @@
-<!doctype html>
-<html>
-<head>
-  <title>Madlib</title>
-</head>
-<body>
+{% extends "base.html"%}
+
+{% block title %} Madlib 3 {% endblock %}
+
+{% block content %}
 
 <h1>Here's your Madlib!</h1>
 
- 
+
 
 
 There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab.
 When {{ person }} went to pick it up, it burst into flames in a totally
-{{ adj }} way.
+{{ adj }} way. You're {{adj2}}.
 
+{% endblock %}
 
-
-</body>
-</html>

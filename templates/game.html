@@ -2,16 +2,39 @@
 <html>
 <head>
   <title>Game</title>
+
 </head>
+
+
 <body>
 
-<h1>Let's play a game!</h1>
+<h2>Let's play a game!</h2>
 
 <form action="/madlib">
-  What is your name? <input type="text" name="person">
-  Enter a color? <input type="text" name="color">
-  Enter a noun? <input type="text" name="noun">
+  <p>What is your name? <input type="text" name="person"></p>
+  <p>Enter a color? <input type="text" name="color"></p>
+
+  <p>Choose ONE noun:
+  <input type="checkbox" name="noun" value = "dog">
+  <label>dog</label>
+  <input type = "checkbox" name = "noun" value = "cat">
+  <label>cat</label>
+  <input type="checkbox" name="noun" value = "fish">
+  <label>fish</label>
+</p>
+
+<p>
   Enter an adjective? <input type="text" name="adj">
+</p>
+<p>
+  Select another adjective:
+  <select name="adj2">
+    <option value="pretty">Pretty</option>
+    <option value="ugly">Ugly</option>
+    <option value="okay">Okay</option>
+  </select>
+</p>
+
   <input type="submit">
 </form>
 
